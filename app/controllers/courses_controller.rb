@@ -2,7 +2,7 @@ class CoursesController < ApplicationController
   def index
     @courses = Course.all.order({ :created_at => :desc })
 
-    render({ :template => "courses/index" })
+    render({ :template => "courses_templates/index" })
   end
 
   def show

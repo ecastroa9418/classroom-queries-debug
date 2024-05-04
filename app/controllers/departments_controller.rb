@@ -2,7 +2,7 @@ class DepartmentsController < ApplicationController
   def index
     @departments = Department.all.order({ :created_at => :desc })
 
-    render({ :template => "departments/index" })
+    render({ :template => "departments_templates/index" })
   end
 
   def show
